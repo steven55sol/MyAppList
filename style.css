@@ -67,6 +67,7 @@ body{
     }
 
     & button{
+        flex: 1;
         padding: 1rem 2rem;
         background-color: var(--purple);
         border: none;
