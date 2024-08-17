@@ -40,14 +40,14 @@ body{
 }
 
 .container-task{
-    max-width:50rem;
-    width: 100%;
-    padding: 1rem;
+    max-width:95%;
+    width: 50rem;
 }
 
 .container-create-task{
+    width: 100%;
     background-color: var(--blanco);
-    padding: 2rem;
+    padding: 2rem 1rem;
     border-radius: 0.5rem;
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,6 @@ body{
     }
 
     & button{
-        flex: 1;
         padding: 1rem 2rem;
         background-color: var(--purple);
         border: none;
@@ -138,3 +137,16 @@ body{
 }
 
 
+@media (width <= 360px){
+
+    .title-task-app{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .container-create-task{
+        gap: 1rem;
+    }
+   
+    
+}
