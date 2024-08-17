@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+:root{
+    --blanco: #fff;
+    --negro: #000;
+    --green: #42eb59;
+    --red: #e45656;
+    --purple: #8b51e9;
+    --gris:#b6b6b6;
+    --fuente-principal: "Poppins"
+}
+
+.title-task-app{
+    color: var(--blanco);
+    font-family: var(--fuente-principal);
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.container-task{
+    max-width:50rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.container-create-task{
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    & input{
+        flex: 1;
+        border-radius: 0.5rem;
+        border: 2px solid var(--purple);
+        padding: 0rem 1rem;
+        font-family: var(--fuente-principal);
+
+        &:focus{
+            outline: none;
+            background-color: var(--blanco);
+        }
+    }
+
+    & button{
+        padding: 1rem 2rem;
+        background-color: var(--purple);
+        border: none;
+        font-family: var(--fuente-principal);
+        font-weight: 700;
+        color: var(--blanco);
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+}
+
+.container-list-task{
+    margin-top: 2rem;
+    max-height: 30rem;
+    overflow: auto;
+    background-color: var(--blanco);
+    border-radius: .5rem;
+    padding: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color:#ad1df0 #ffffff;
+
+    & .vacio{
+        text-align: center;
+        font-family: var(--fuente-principal);
+        color: var(--gris);
+        font-weight: 700;
+        font-size: 1.3rem;
+
+    }
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    border-bottom: 2px solid var(--purple);
+
+    & p{
+        cursor: pointer;
+        font-family: var(--fuente-principal);
+        font-weight: 500;
+        font-size: 1.5rem
+    }
+
+    & svg{
+        background-color: var(--purple);
+        padding: .5rem;
+        color: var(--blanco);
+        border-radius: .3rem;
+        cursor: pointer;
+    }
+}
+
+.marca{
+    text-decoration: line-through;
+}
+
+.alerta{
+    background-color: var(--red);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: var(--blanco);
+    font-family: var(--fuente-principal);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+
